@@ -409,7 +409,7 @@ for fname in tqdm(file_list):
                 if e > s + 1:
                     interp = np.linspace(valv[k], valv[k + 1], e - s + 1)[1:-1]
                     ehr_mask[s+1:e, j]  = 1
-                    ehr_gt[s+1:e, j]    = interp
+                    ehr_gt[s+1:e, j]    = 0
                     ehr_trend[s+1:e, j] = interp
 
     # build VITAL curves
